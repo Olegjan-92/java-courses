@@ -6,8 +6,8 @@ public class InteractRunner1 {
 		try {
 			Calculatorsum calssum = new Calculatorsum();
 			Calculatorraz calsraz = new Calculatorraz();
-			String exit = "no";
-				while (!exit.equals("yes")){
+			String exit = "n";
+				while (!exit.equals("y")){
 					System.out.println("Выберите операцию: +/- ");
 					String oper = reader.next();
 					System.out.println("Enter first arg: ");
@@ -25,7 +25,7 @@ public class InteractRunner1 {
 					int sum = arg1 - arg2;
 					System.out.println("Result: " + sum);
 					}
-					System.out.println("Exit: yes/no ");
+					System.out.println("Exit: y/n ");
 					exit = reader.next();
 			}
 		}finally{
